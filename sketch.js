@@ -50,7 +50,7 @@ function CreateDoomsday() {
   // Inc every 12 months
   let a = floor(L2 / 12);
   // get remainder
-  let b = last2 % 12;
+  let b = L2 % 12;
   // account for leap years using b
   let c = floor(b / 4);
 

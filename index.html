@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+    <script language="javascript" type="text/javascript" src="libraries/p5.dom.js"></script>
+
+    <!-- Script references -->
+    <script language="javascript" type="text/javascript" src="sketch.js"></script>
+    <script language="javascript" type="text/javascript" src="dataSets.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div id="canvascontainer" class="Canvas">
+        <!-- Script references -->
+        <script src="sketch.js"></script>
+        <div class="TextContainer">
+          <div class="Text">Doomsday Algorithm</div>
+          <div class="Text2">Find the weekday for any day in the gregorian calendar</div>
+          <div class="Grey-Line">
+
+          </div>
+        </div>
+
+        <div class="FinalDateContainer">
+          <div class="FinalDateText" id="FinalDateTextID"></div>
+          <div class="FinalDayText" id="FinalDayTextID"></div>
+        </div>
+        
+        <div class="buttonContainer">
+          <button id="FindDoomsdayButton" class="Button1">Generate</button> 
+        </div>
+
+        <div class="dateInput">
+          <form>
+            <label for="fname"></label>
+            <input type="text" id="fname" name="fname" placeholder="DD/MM/YYYY" autocomplete="off">
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

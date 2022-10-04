@@ -1,0 +1,171 @@
+.wrapper {
+  position: relative;
+  text-align: center;
+  margin: auto;
+
+  /* Show the borders of the div */
+  /*border: 1px solid red;*/
+}
+.Canvas {
+  position: relative;
+
+  margin: auto;
+  margin-top: 10vh;
+  width: 900;
+
+  /* Show the borders of the div */
+  /*border: 1px solid rgb(0, 134, 40);*/
+}
+
+.TextContainer {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+
+  text-align: center;
+  margin: auto;
+
+  margin-left: 0%;
+  /* border: 3px solid green; */
+}
+.Text {
+  color: rgb(153, 153, 153);
+  font-family: Helvetica, sans-serif;
+  font-size: 60px;
+
+  position: relative;
+
+  display: outside;
+  /* border: 3px solid green; */
+  /* Show the borders of the div */
+  /* border: 1px solid rgb(68, 0, 255); */
+}
+.Text2 {
+  color: rgb(153, 153, 153);
+  font-family: Helvetica, sans-serif;
+  
+
+  position: relative;
+
+  display: outside;
+  /* border: 3px solid green; */
+  /* Show the borders of the div */
+  /* border: 1px solid rgb(68, 0, 255); */
+}
+.Grey-Line {
+  background-color: rgb(68, 68, 68);
+  
+  width: 700px;
+  height: 2px;
+
+  margin-left: 100px;
+  margin-top: 5px;
+}
+
+.FinalDateContainer {
+  position: absolute;
+  width: 100%;
+  top: 200px;
+
+  text-align: center;
+
+  /* border: 1px solid rgb(68, 0, 255); */
+}
+.FinalDateText {
+  color: rgb(153, 153, 153);
+  font-family: Helvetica, sans-serif;
+  font-size: 30px;
+
+  position: relative;
+
+  display: outside;
+}
+.FinalDayText {
+  top: 10;
+
+  color: rgb(153, 153, 153);
+  font-family: Helvetica, sans-serif;
+  font-size: 40px;
+
+  position: relative;
+
+  display: outside;
+}
+
+.buttonContainer {
+  position: absolute;
+  top: 450;
+  /* border: 1px solid rgb(68, 0, 255); */
+  margin: auto;
+
+  width: 100%;
+}
+
+.Button1 {
+  font-size: 50;
+  background-color: rgb(83, 83, 83);
+  transition-duration: 0.3s;
+  color: rgb(0, 0, 0);
+  position: relative;
+  border: none;
+  border-radius: 8px;
+  /* color: rgb(24, 24, 24); */
+
+  border: none;
+  outline: none;
+  display: inline;
+}
+.Button1:hover {
+  background-color: rgb(63, 63, 63);
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+body {
+  background-color: rgb(39, 39, 39);
+}
+
+.dateInput {
+  position: absolute;
+  top: 400px;
+
+  width: 500px;
+  height: 0%;
+
+  left: 200px;
+
+  color: rgb(24, 24, 24);
+}
+input[type="text"] {
+  width: 150;
+  padding: 0;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid rgb(34, 34, 34);
+
+  font-family: Helvetica, sans-serif;
+  font-size:14pt;
+
+  background-color: rgb(51, 51, 51);
+  outline: none;
+  transition-duration: 0.3s;
+
+  /* width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px; */
+  transition: width 0.4s ease-in-out;
+}
+
+input[type="text"]:focus {
+  border-bottom: 2px solid rgb(34, 34, 34);
+  border-radius: 25;
+  width: 200;
+}

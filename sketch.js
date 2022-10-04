@@ -42,7 +42,7 @@ function CreateDoomsday() {
   } else if (century == 3) {
     anchorCentury = 3;
   }
-  console.log("anchorcentury", anchorCentury);
+  console.log("Century Anchor Day:", lookupTable[1][anchorCentury]);
   // ------------------------------------------------------ //
 
   // --------------- Get the anchor day for the last two digits of year ---------- //
@@ -58,6 +58,7 @@ function CreateDoomsday() {
 
   // total both up and % 7 to get num within days of the week
   let doomsday = (total + anchorCentury) % 7;
+  console.log("Anchor Year:", lookupTable[1][doomsday]);
 
   // Check if its a leap year because that alters the anchor day for some months
   let leapYear;
@@ -73,6 +74,7 @@ function CreateDoomsday() {
 
   // Find the anchor day for the chosen month.
   let monthAnchor = gatherDoom(month, leapYear);
+  console.log("Closest Doomsday:", monthAnchor);
 
   // ----- calculate how far away the nearest anchor day is from day input and change day accordingly ------ //
   if (abs(day - monthAnchor) % 7 != 0 && day != monthAnchor) {
@@ -93,7 +95,7 @@ function CreateDoomsday() {
     }
   }
   // ------------------------------------------------------------------------ //
-  
+
   // Convert numerical months to alphabetical and display
   FinalDate.html(
     lookupTable[0][month - 1] + ", " + day + ", " + GetData(Qdate, "year")

@@ -47,12 +47,10 @@ function CreateDoomsday() {
 
   // --------------- Get the anchor day for the last two digits of year ---------- //
   let L2 = year % 100;
-  // Inc every 12 months
-  let a = floor(L2 / 12);
-  // get remainder
-  let b = L2 % 12;
-  // account for leap years using b
-  let c = floor(b / 4);
+
+  let a = floor(L2 / 12); // Inc every 12 months
+  let b = L2 % 12; // get remainder
+  let c = floor(b / 4); // account for leap years using b
 
   // Calc total
   let total = a + b + c;
@@ -76,7 +74,7 @@ function CreateDoomsday() {
   // Find the anchor day for the chosen month.
   let monthAnchor = gatherDoom(month, leapYear);
 
-  // calculate how far away the nearest anchor day is from day input and change day accordingly //
+  // ----- calculate how far away the nearest anchor day is from day input and change day accordingly ------ //
   if (abs(day - monthAnchor) % 7 != 0 && day != monthAnchor) {
     let temp = abs(monthAnchor - day);
     temp = temp % 7;
@@ -94,7 +92,8 @@ function CreateDoomsday() {
       }
     }
   }
-
+  // ------------------------------------------------------------------------ //
+  
   // Convert numerical months to alphabetical and display
   FinalDate.html(
     lookupTable[0][month - 1] + ", " + day + ", " + GetData(Qdate, "year")

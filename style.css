@@ -1,3 +1,6 @@
+
+/* Yes I am aware that this is possibly the most hideous css code to exist but it works soooo... */
+
 .wrapper {
   position: relative;
   text-align: center;
@@ -46,6 +49,20 @@
   
 
   position: relative;
+
+  display: outside;
+  /* border: 3px solid green; */
+  /* Show the borders of the div */
+  /* border: 1px solid rgb(68, 0, 255); */
+}
+.noteText {
+  color: rgb(153, 153, 153);
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+
+  bottom: 0;
+  left: 100;
+  position: absolute;
 
   display: outside;
   /* border: 3px solid green; */
@@ -151,16 +168,6 @@ input[type="text"] {
   outline: none;
   transition-duration: 0.3s;
 
-  /* width: 130px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
-  background-image: url('searchicon.png');
-  background-position: 10px 10px; 
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px; */
   transition: width 0.4s ease-in-out;
 }
 

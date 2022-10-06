@@ -2,11 +2,9 @@ var Qdate;
 
 // Sunday = 0... saturday = 6
 var lookupTable = [];
-
+var QdateID
+var GenerateDoomsday;
 function preload() {
-  GenerateDoomsday = select("#FindDoomsdayButton");
-  GenerateDoomsday.mousePressed(CreateDoomsday);
-
   FinalDate = select("#FinalDateTextID");
   FinalDay = select("#FinalDayTextID");
 }
@@ -15,13 +13,15 @@ function setup() {
   // initilize the canvas position to the canvas container div
   let canvas = createCanvas(700, 700);
   canvas.parent("canvascontainer");
-
+  GenerateDoomsday = select("#FindDoomsdayButton");
+  GenerateDoomsday.mousePressed(CreateDoomsday);
   CreateLookupTable(lookupTable);
+  QdateID = document.getElementById("fname");
 }
 
 function draw() {
   background(51);
-  Qdate = document.getElementById("fname").value;
+  Qdate = QdateID.value;
 }
 
 function CreateDoomsday() {
